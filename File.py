@@ -154,8 +154,8 @@ def reg():
         
     except (KeyError, IOError):
         reg2()
-
-    r = request.get ('https://raw.githubusercontent.com/MohSinTheLegend/FILE-CRACK/main/Server.txt').text
+r = requests.get('https://raw.githubusercontent.com/Sarfraz-Baloch/File-crack/main/server.txt').text
+   
     if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
